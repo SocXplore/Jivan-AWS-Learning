@@ -12,7 +12,7 @@ This repository keeps everything for each topic in one place:
 
 ## Topics
 
-1. AWS Partner Accreditation
+1. AWS 
 2. JSON
 3. Python with Labs
 4. YAML
