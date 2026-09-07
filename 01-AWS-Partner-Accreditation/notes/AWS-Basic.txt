@@ -148,19 +148,3 @@ store images and static files, an RDS database to store application data, and a 
 distribute traffic. CloudWatch is used for monitoring, and Auto Scaling automatically adds or 
 removes EC2 instances based on traffic demand. This architecture is scalable, reliable, and cost￾effective.
 
-
-Questions that interviewers often ask at the end
-
-Q: Why AWS over traditional servers?
-AWS is more flexible, scalable, and cost-effective because resources can be provisioned on demand 
-without purchasing physical hardware.
-
-
-Q: Which AWS services have you learned?
-I have worked with EC2, S3, VPC, IAM, RDS, CloudWatch, Auto Scaling, and Load Balancer. I 
-understand their purpose and how they work together in a cloud environment.
-
-
-Q: Which AWS service do you like most and why?
-I like EC2 because it allows me to quickly launch virtual servers and host applications without 
-managing physical infrastructure.
