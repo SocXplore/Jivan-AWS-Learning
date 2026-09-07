@@ -1,0 +1,166 @@
+Module 1
+
+What is AWS?
+Answer:
+AWS (Amazon Web Services) is a cloud computing platform provided by Amazon. It offers many 
+services such as virtual servers, storage, databases, networking, and security over the internet. 
+Instead of buying and maintaining physical hardware, companies can use AWS resources whenever 
+they need them and pay only for what they use. This makes AWS flexible, scalable, and cost￾effective.
+
+
+What is Cloud Computing?
+Answer:
+Cloud computing is the process of accessing computing resources such as servers, storage, 
+databases, and software through the internet instead of using local machines. It allows users to scale 
+resources based on demand and reduces the need for expensive hardware. Cloud computing helps 
+organizations deploy applications faster and manage infrastructure more efficiently.
+
+
+What is EC2?
+Answer:
+EC2 (Elastic Compute Cloud) is a service in AWS that provides virtual servers called instances. 
+These instances can be used to host websites, run applications, or perform various computing tasks. 
+Users can choose the required operating system, CPU, memory, and storage based on their needs. 
+EC2 makes it easy to quickly launch and manage servers without purchasing physical hardware.
+
+
+What is S3?
+Answer:
+Amazon S3 (Simple Storage Service) is an object storage service used to store and retrieve files 
+such as images, videos, documents, and backups. It is highly durable, scalable, and secure. Since S3 
+can store large amounts of data, it is commonly used for website content, backup solutions, and data 
+archiving.
+
+
+What is VPC?
+Answer:
+A Virtual Private Cloud (VPC) is a private network created within AWS. It allows users to launch 
+AWS resources in an isolated environment and control networking settings such as IP addresses, 
+subnets, route tables, and security rules. A VPC helps improve security and gives organizations full 
+control over their cloud network architecture.
+
+
+What is a Security Group?
+Answer:
+A Security Group acts as a virtual firewall for AWS resources such as EC2 instances. It controls 
+inbound and outbound traffic by allowing or denying connections based on specific rules. For 
+example, a Security Group can allow HTTP traffic on port 80 or SSH access on port 22. It helps 
+protect resources from unauthorized access.
+
+
+What is Auto Scaling?
+Answer:
+Auto Scaling automatically adjusts the number of EC2 instances based on application demand. 
+When traffic increases, it launches additional instances to handle the load. When traffic decreases, it 
+removes unnecessary instances to reduce costs. This helps maintain application performance while 
+optimizing resource usage.
+
+
+What is a Load Balancer?
+Answer:
+A Load Balancer distributes incoming user traffic across multiple servers or EC2 instances. This 
+prevents any single server from becoming overloaded and improves application availability. If one 
+instance fails, the Load Balancer can redirect traffic to healthy instances, ensuring uninterrupted 
+service for users.
+
+
+What is RDS?
+Answer:
+Amazon RDS (Relational Database Service) is a managed database service provided by AWS. It 
+supports popular database engines such as MySQL, PostgreSQL, and SQL Server. AWS handles 
+tasks like backups, software updates, and maintenance, allowing users to focus on their applications 
+instead of managing database infrastructure.
+
+
+What is CloudWatch?
+Answer:
+Amazon CloudWatch is a monitoring and observability service used to track the performance of 
+AWS resources. It collects metrics such as CPU usage, memory utilization, and network activity. 
+CloudWatch can also generate alarms and notifications when specific conditions are met, helping 
+administrators monitor and maintain system health.
+
+
+1. What is an Availability Zone (AZ)?
+Answer:
+An Availability Zone is a physical data center within an AWS Region. Each Region contains 
+multiple Availability Zones that are isolated from each other but connected through high-speed 
+networks. Using multiple Availability Zones helps improve application availability and fault 
+tolerance because if one AZ fails, the application can continue running in another AZ.
+
+
+2. What is the difference between a Region and an Availability 
+Zone?
+Answer:
+A Region is a geographical location where AWS has its infrastructure, such as Mumbai or 
+Singapore. An Availability Zone is a separate data center within that Region. A Region can have 
+multiple Availability Zones. Regions help deploy resources closer to users, while Availability Zones 
+provide high availability and disaster recovery.
+
+
+4. What is IAM?
+Answer:
+IAM (Identity and Access Management) is a service used to securely manage access to AWS 
+resources. It allows administrators to create users, groups, and roles and assign permissions based 
+on what each person or service needs. IAM follows the principle of least privilege, meaning users 
+should only get the permissions necessary for their work.
+
+
+5. What is the difference between IAM User and IAM Role?
+Answer:
+An IAM User is created for a specific person who needs access to AWS resources. An IAM Role is 
+a set of permissions that can be temporarily assumed by users, applications, or AWS services. Roles 
+are commonly used to provide secure access without sharing long-term credentials.
+
+
+6. What is the difference between EBS and EFS?
+Answer:
+EBS (Elastic Block Store) provides block storage that is attached to a single EC2 instance, similar 
+to a hard disk. EFS (Elastic File System) provides shared file storage that can be accessed by 
+multiple EC2 instances at the same time. EBS is suitable for operating systems and databases, while 
+EFS is useful for shared application data.
+
+
+7. Why is S3 called Object Storage?
+Answer:
+S3 stores data as objects instead of files or blocks. Each object contains the data itself, metadata, 
+and a unique identifier. Because of this structure, S3 can store massive amounts of data efficiently 
+and is commonly used for backups, images, videos, and static website hosting.
+
+
+8. What happens if an EC2 instance stops?
+Answer:
+When an EC2 instance is stopped, the operating system shuts down and computing charges stop. 
+However, attached EBS volumes remain stored, so data is not lost. When the instance is started 
+again, it may receive a new public IP address unless an Elastic IP is used.
+
+
+9. What is an Elastic IP Address?
+Answer:
+An Elastic IP is a static public IP address provided by AWS. Unlike normal public IP addresses that 
+may change when an EC2 instance is restarted, an Elastic IP remains the same. It can be quickly 
+associated with another instance if needed, helping improve application availability.
+
+
+10. Explain a simple AWS architecture for a website.
+Answer:
+A basic AWS website architecture includes an EC2 instance to host the application, an S3 bucket to 
+store images and static files, an RDS database to store application data, and a Load Balancer to 
+distribute traffic. CloudWatch is used for monitoring, and Auto Scaling automatically adds or 
+removes EC2 instances based on traffic demand. This architecture is scalable, reliable, and cost￾effective.
+
+
+Questions that interviewers often ask at the end
+
+Q: Why AWS over traditional servers?
+AWS is more flexible, scalable, and cost-effective because resources can be provisioned on demand 
+without purchasing physical hardware.
+
+
+Q: Which AWS services have you learned?
+I have worked with EC2, S3, VPC, IAM, RDS, CloudWatch, Auto Scaling, and Load Balancer. I 
+understand their purpose and how they work together in a cloud environment.
+
+
+Q: Which AWS service do you like most and why?
+I like EC2 because it allows me to quickly launch virtual servers and host applications without 
+managing physical infrastructure.
