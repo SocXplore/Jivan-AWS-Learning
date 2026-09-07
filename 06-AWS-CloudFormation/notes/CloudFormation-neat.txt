@@ -128,7 +128,7 @@ Subnets, Security Groups, S3 Buckets, RDS databases, Load Balancers, and Auto Sc
 It automates the creation and management of these resources using templates.
 
 
-Important Scenario Questions
+Important Questions
 
 Q1: Why would a company use CloudFormation?
 
@@ -152,11 +152,3 @@ EC2 is a service used to launch virtual machines, while CloudFormation is a serv
 automate the creation and management of AWS resources, including EC2 instances. 
 CloudFormation can create EC2, VPC, S3, and many other resources together.
 
-
-30-Second Interview Summary
-
-"AWS CloudFormation is an Infrastructure as Code service that automates the creation and 
-management of AWS resources using JSON or YAML templates. Templates are deployed as stacks, 
-which can contain resources such as EC2, VPC, S3, and RDS. Features like Parameters, Outputs, 
-Change Sets, Drift Detection, and Nested Stacks help make deployments reusable, manageable, and 
-consistent across environments."
