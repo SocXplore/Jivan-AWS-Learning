@@ -1,0 +1,162 @@
+Cloud formation
+
+1. What is AWS CloudFormation?
+
+Answer:
+AWS CloudFormation is an Infrastructure as Code (IaC) service that allows us to create and 
+manage AWS resources using code instead of manually creating them through the AWS Console. 
+We write templates in JSON or YAML format, and CloudFormation automatically provisions the 
+required resources. This helps maintain consistency, reduce manual errors, and automate 
+deployments.
+
+
+2. What is Infrastructure as Code (IaC)?
+
+Answer:
+Infrastructure as Code is the practice of managing infrastructure through code instead of manual 
+configuration. By using templates or scripts, we can automatically create servers, networks, 
+databases, and other resources. This makes deployments faster, repeatable, and less prone to human 
+error.
+
+
+3. What is a CloudFormation Template?
+
+Answer:
+A CloudFormation template is a text file written in JSON or YAML that describes the AWS 
+resources we want to create. The template contains information about resources, parameters, 
+outputs, and configurations. CloudFormation reads the template and creates the infrastructure 
+automatically.
+
+
+4. Why do we use CloudFormation?
+
+Answer:
+CloudFormation helps automate infrastructure deployment and management. It reduces manual 
+work, ensures consistent environments, and allows infrastructure to be version-controlled. It is 
+especially useful when creating the same setup multiple times for development, testing, and 
+production environments.
+
+
+5. What is a Stack?
+
+Answer:
+A Stack is a collection of AWS resources created and managed together using a CloudFormation 
+template. When a template is executed, CloudFormation creates a stack containing all the resources 
+defined in that template. Resources in the stack can be updated or deleted together.
+
+
+6. What are Parameters in CloudFormation?
+
+Answer:
+Parameters allow users to provide input values when creating a stack. Instead of hardcoding values 
+such as instance type or key pair name, parameters make templates reusable and flexible. Different 
+values can be supplied without modifying the template itself.
+
+
+7. What are Outputs in CloudFormation?
+
+Answer:
+Outputs display useful information after stack creation. For example, they can show an EC2 public 
+IP address, website URL, or database endpoint. Outputs make it easy to retrieve important resource 
+information created by the template.
+
+
+8. What are Mappings?
+
+Answer:
+Mappings are used to define fixed values inside a template. They are commonly used to select 
+different values based on regions or environments. For example, different AMI IDs can be specified 
+for different AWS Regions.
+
+
+9. What are CloudFormation Functions?
+
+Answer:
+Functions help make templates dynamic and flexible. They can reference resources, combine 
+values, or retrieve information during stack creation. Common functions include Ref and 
+Fn::GetAtt. These functions reduce hardcoding and improve template reusability.
+
+
+10. What is Drift Detection?
+
+Answer:
+Drift Detection checks whether resources in AWS still match the CloudFormation template. If 
+someone manually changes a resource after stack creation, CloudFormation identifies the difference 
+and reports the drift. This helps maintain infrastructure consistency.
+
+Interview Example:
+"If an EC2 instance type is changed manually, Drift Detection can identify that the stack no longer 
+matches the template.”
+
+
+11. What is a Change Set?
+
+Answer:
+A Change Set allows users to preview changes before updating a CloudFormation stack. It shows 
+which resources will be created, modified, or deleted. This helps avoid unexpected changes 
+and provides better control over updates.
+
+
+12. What is a Nested Stack?
+
+Answer:
+A Nested Stack is a CloudFormation stack that is created inside another stack. It helps break large 
+templates into smaller reusable templates. This improves organization, simplifies maintenance, and 
+allows code reuse.
+
+
+13. What is CloudFormation Designer?
+
+Answer:
+CloudFormation Designer is a visual tool that helps users create and view CloudFormation 
+templates using a graphical interface. It displays AWS resources and their relationships, making it 
+easier to design infrastructure without writing everything manually.
+
+
+14. Does CloudFormation support JSON and YAML?
+
+Answer:
+Yes. CloudFormation templates can be written in both JSON and YAML formats. YAML is 
+generally preferred because it is easier to read and requires less code compared to JSON.
+
+
+15. What resources can CloudFormation create?
+
+Answer:
+CloudFormation can create and manage many AWS resources, including EC2 instances, VPCs, 
+Subnets, Security Groups, S3 Buckets, RDS databases, Load Balancers, and Auto Scaling Groups. 
+It automates the creation and management of these resources using templates.
+
+
+Important Scenario Questions
+
+Q1: Why would a company use CloudFormation?
+
+Answer:
+A company uses CloudFormation to automate infrastructure deployment, maintain consistency 
+across environments, reduce manual errors, and make infrastructure easier to manage. It also 
+supports version control and faster deployments.
+
+
+Q2: What happens if I delete a CloudFormation Stack?
+
+Answer:
+When a stack is deleted, CloudFormation removes all resources created by that stack unless deletion 
+protection or retention policies are configured. This makes resource cleanup simple and automated.
+
+
+Q3: What is the difference between CloudFormation and EC2?
+
+Answer:
+EC2 is a service used to launch virtual machines, while CloudFormation is a service used to 
+automate the creation and management of AWS resources, including EC2 instances. 
+CloudFormation can create EC2, VPC, S3, and many other resources together.
+
+
+30-Second Interview Summary
+
+"AWS CloudFormation is an Infrastructure as Code service that automates the creation and 
+management of AWS resources using JSON or YAML templates. Templates are deployed as stacks, 
+which can contain resources such as EC2, VPC, S3, and RDS. Features like Parameters, Outputs, 
+Change Sets, Drift Detection, and Nested Stacks help make deployments reusable, manageable, and 
+consistent across environments."
