@@ -1,0 +1,345 @@
+JSON - STRUCTURED NOTES
+
+1. WHAT IS JSON?
+
+JSON = JavaScript Object Notation
+
+JSON is a lightweight format used to store and exchange structured data.
+
+JSON is commonly used to send and receive data between applications, especially through APIs.
+
+
+2. BASIC JSON STRUCTURE
+
+A JSON object uses curly brackets:
+
+{
+  "key": "value"
+}
+
+Example:
+
+{
+  "name": "JK",
+  "age": 21
+}
+
+Here:
+
+"name" -> key
+"JK"   -> value
+
+"age"  -> key
+21     -> value
+
+
+3. JSON SYMBOLS
+
+{ } -> Object
+[ ] -> Array
+
+Object:
+{
+  "name": "JK",
+  "age": 21
+}
+
+Array:
+[
+  "AWS",
+  "Azure"
+]
+
+
+4. KEY-VALUE PAIR
+
+JSON stores data mainly as key-value pairs.
+
+Example:
+
+"name": "JK"
+
+"name" -> Key
+"JK"   -> Value
+
+Another example:
+
+"age": 21
+
+"age" -> Key
+21    -> Value
+
+
+5. JSON DATA TYPES
+
+String:
+"name": "JK"
+
+Number:
+"age": 21
+
+Boolean:
+"active": true
+
+Boolean values:
+true
+false
+
+Object:
+"address": {
+  "city": "Chennai"
+}
+
+Array:
+"skills": [
+  "AWS",
+  "Azure"
+]
+
+Null:
+"phone": null
+
+
+6. SINGLE ENTITY
+
+Single entity = one object.
+
+Example:
+
+{
+  "id": 1,
+  "first_name": "Jeanette",
+  "last_name": "Penddreth",
+  "email": "jpenddreth0@census.gov",
+  "gender": "Female",
+  "salary": 84340.5,
+  "active": true
+}
+
+Here there is one object/person.
+
+Remember:
+
+Single Entity -> { }
+
+
+7. MULTIPLE ENTITIES
+
+Multiple entities means multiple objects.
+
+They are placed inside an array.
+
+Example:
+
+[
+  {
+    "id": 1,
+    "first_name": "Jeanette"
+  },
+  {
+    "id": 2,
+    "first_name": "Giavani"
+  },
+  {
+    "id": 3,
+    "first_name": "Noell"
+  }
+]
+
+Remember:
+
+Multiple Entities -> [ { }, { }, { } ]
+
+It is an array containing multiple objects.
+
+
+8. NESTED ENTITY
+
+Nested entity = object inside another object.
+
+Example:
+
+{
+  "id": 1,
+  "first_name": "Jeanette",
+  "address": {
+    "house_number": "1234, Elite Apartments, Oak Street",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": 90212
+  }
+}
+
+Here "address" is an object inside the main object.
+
+Remember:
+
+Nested Entity -> Object inside Object
+
+
+9. NESTED ARRAY
+
+Nested array = array inside an object.
+
+Example:
+
+{
+  "id": 1,
+  "first_name": "Jeanette",
+  "email": [
+    "jpenddreth0@census.gov",
+    "jpenddreth0@gmail.com"
+  ]
+}
+
+Here "email" contains multiple values, so an array [ ] is used.
+
+Remember:
+
+Nested Array -> Array inside Object
+
+
+10. ARRAY OF NESTED ENTITIES
+
+This means an array contains multiple objects.
+
+Example:
+
+{
+  "id": 1,
+  "first_name": "Jeanette",
+  "contact_info": [
+    {
+      "email": "jpenddreth0@census.gov",
+      "phone": "650-555-9887"
+    },
+    {
+      "email": "jpenddreth0@gmail.com",
+      "phone": "650-555-1100"
+    }
+  ]
+}
+
+Here:
+
+"contact_info": [
+  { object },
+  { object }
+]
+
+So contact_info is an array containing objects.
+
+Remember:
+
+Array of Nested Entities -> [ { }, { } ]
+
+
+11. FIVE TYPES - EASY COMPARISON
+
+Single Entity:
+{ }
+
+Meaning:
+One object.
+
+Multiple Entities:
+[ { }, { } ]
+
+Meaning:
+Multiple objects inside an array.
+
+Nested Entity:
+"address": { }
+
+Meaning:
+Object inside an object.
+
+Nested Array:
+"email": [ ]
+
+Meaning:
+Array inside an object.
+
+Array of Nested Entities:
+"contact_info": [ { }, { } ]
+
+Meaning:
+Array containing multiple objects.
+
+
+12. { } VS [ ]
+
+{ } -> Object
+
+Think:
+One thing with properties.
+
+[ ] -> Array
+
+Think:
+A list of things.
+
+[{}, {}] -> A list of objects.
+
+
+13. JSON RULES
+
+Rule 1:
+Keys are written inside double quotes.
+
+Example:
+
+{
+  "name": "JK"
+}
+
+Rule 2:
+Key-value pairs are separated by commas.
+
+Example:
+
+{
+  "name": "JK",
+  "age": 21,
+  "active": true
+}
+
+Rule 3:
+Strings use double quotes.
+
+"name": "JK"
+
+Rule 4:
+Numbers do not need quotes.
+
+"age": 21
+
+Rule 5:
+Boolean values do not need quotes.
+
+"active": true
+
+
+14. CHEAT SHEET
+
+{ } -> Object
+[ ] -> Array
+
+{ } -> Single Entity
+
+[ { }, { } ] -> Multiple Entities
+
+{ "address": { } } -> Nested Entity
+
+{ "email": [ ] } -> Nested Array
+
+{ "contact_info": [ { }, { } ] } -> Array of Nested Entities
+
+
+ONE-LINE MEMORY:
+
+Object = { }
+Array = [ ]
+Object inside Object = Nested Entity
+Array inside Object = Nested Array
+Array containing Objects = Array of Objects
