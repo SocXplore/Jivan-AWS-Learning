@@ -1,0 +1,33 @@
+VPC
+
+VPC
+- Private network in AWS.
+
+Subnet
+- Divides a VPC into smaller networks.
+- Resources are deployed inside subnets.
+
+Public Subnet
+- Has a route to the internet.
+
+Private Subnet
+- No direct route from the internet.
+
+Route Table
+- Controls where network traffic goes.
+
+Internet Gateway (IGW)
+- Connects a VPC to the internet.
+
+NAT Gateway
+- Allows resources in a private subnet to access the internet outbound.
+
+NACL
+- Virtual firewall for a subnet.
+- Controls inbound and outbound traffic.
+- Stateless.
+
+Security Group
+- Virtual firewall for resources such as EC2.
+- Controls inbound and outbound traffic.
+- Stateful.

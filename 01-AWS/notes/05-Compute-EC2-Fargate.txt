@@ -1,0 +1,35 @@
+Compute
+
+Cloud Computing
+- Access compute resources such as CPU, memory and storage when needed.
+
+EC2
+- Virtual server/instance in AWS.
+
+AMI
+- Template used to launch an EC2 instance.
+- Contains the OS and required software/configuration.
+
+EC2 instance types:
+- General Purpose
+- Compute Optimized
+- Memory Optimized
+- Accelerated Computing
+- Storage Optimized
+
+Containers
+- Package an application with its dependencies and configuration.
+
+ECS
+- Runs and manages containers.
+
+Fargate
+- Serverless way to run containers.
+- AWS manages the underlying compute resources.
+
+Fargate flow:
+1. Package app into a container.
+2. Store the container image in a registry.
+3. Run it using ECS.
+4. Fargate manages the required resources.
+5. Scale as needed.

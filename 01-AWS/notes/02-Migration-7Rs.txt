@@ -1,0 +1,22 @@
+Migration Strategies – 7Rs
+
+1. Rehost
+- Move the application to AWS with minimal changes.
+
+2. Relocate
+- Move workloads to AWS with minimal modification.
+
+3. Replatform
+- Make small changes to use AWS services better.
+
+4. Repurchase
+- Replace the existing application with a different product.
+
+5. Refactor / Re-architect
+- Redesign the application to use cloud-native features.
+
+6. Retire
+- Remove applications that are no longer needed.
+
+7. Retain
+- Keep the application where it is for now.

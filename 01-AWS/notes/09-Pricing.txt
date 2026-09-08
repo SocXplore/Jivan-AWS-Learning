@@ -1,0 +1,17 @@
+AWS Pricing Options
+
+On-Demand
+- Pay for what you use.
+- No long-term commitment.
+
+Reserved
+- Commit to a longer term for eligible resources.
+- Lower cost than On-Demand.
+
+Savings Plans
+- Commit to a consistent amount of usage.
+- Can provide lower cost than On-Demand.
+
+Spot
+- Uses spare AWS capacity.
+- Lower cost, but workloads can be interrupted.

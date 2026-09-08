@@ -1,0 +1,16 @@
+AWS Shared Responsibility Model
+
+AWS responsibility
+- Physical hardware
+- AWS infrastructure
+- Data centers and underlying cloud infrastructure
+
+Customer responsibility
+- Customer data
+- Access control
+- Client-side encryption
+- Appropriate OS, application and network configuration
+
+Simple idea:
+- AWS secures the cloud.
+- Customer secures what they put in the cloud.

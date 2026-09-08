@@ -1,0 +1,14 @@
+Messaging
+
+SQS
+- Queue-based messaging service.
+- Sender sends a message to a queue.
+- Message waits until a consumer processes it.
+
+SNS
+- Publish/subscribe messaging service.
+- One publisher can send messages to multiple subscribers.
+
+SQS vs SNS
+- SQS = queue / one message is processed by a consumer.
+- SNS = broadcast / message can go to many subscribers.

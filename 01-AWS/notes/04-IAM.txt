@@ -1,0 +1,16 @@
+IAM
+
+Authentication
+- Proves who you are.
+
+Authorization
+- Defines what you are allowed to access or use.
+
+IAM
+- Manages authentication and authorization in AWS.
+
+Main IAM concepts:
+- User
+- Group
+- Policy
+- Role

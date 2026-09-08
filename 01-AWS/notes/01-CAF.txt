@@ -1,0 +1,19 @@
+AWS CAF
+
+AWS CAF = Cloud Adoption Framework
+
+- Helps an organization move to cloud smoothly.
+
+Perspectives:
+- Business
+- People
+- Governance
+- Platform
+- Security
+- Operations
+
+Transformation phases:
+- Envision
+- Align
+- Launch
+- Scale

@@ -1,0 +1,38 @@
+Storage
+
+EBS
+- Block-level storage.
+- Used with EC2.
+
+S3
+- Object-level storage.
+- Stores data as objects.
+- Each object contains metadata, object ID and data.
+
+File Storage
+- Stores data as files.
+- Useful when multiple systems need shared file access.
+
+S3 Versioning
+- Keeps multiple versions of the same object.
+- Helps recover previous versions.
+
+S3 Glacier
+- Used for archiving.
+- Suitable for long-term data retention.
+- Retrieval can take longer.
+
+Storage Gateway
+- Used for hybrid cloud storage.
+- Connects on-premises storage to AWS storage.
+- Useful for backup and archiving.
+- Data can stay local and be sent to AWS for long-term backup/archive.
+
+RDS
+- Managed database service.
+- AWS manages tasks such as backups and maintenance.
+
+Aurora
+- AWS relational database service.
+- Compatible with MySQL and PostgreSQL.
+- Built for speed and availability.

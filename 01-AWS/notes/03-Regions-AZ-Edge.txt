@@ -1,0 +1,20 @@
+Regions, Availability Zones and Edge
+
+Region
+- Geographic location.
+- Contains multiple Availability Zones.
+
+Availability Zone (AZ)
+- Separate data center location(s) within a Region.
+- Helps with high availability and fault isolation.
+
+Edge Location
+- Location closer to users.
+- Helps reduce latency by serving cached/delivered content.
+
+Choose a Region based on:
+- Latency
+- Pricing
+- Service availability
+- Data compliance
+- Proximity
