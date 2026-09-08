@@ -1,0 +1,44 @@
+AWS CAF – Cloud Adoption Framework
+
+A guide to help organization move to cloud smoothly.
+
+
+6 Perspectives
+
+Business → See the cloud plan match company goals.
+
+People → Are staff trained and ready to adapt.
+
+Governance → Are rules and risks managed well.
+
+Platform → Is the cloud setup strong and working.
+
+Security → Is everything protected.
+
+Operations → Is everything running smoothly daily.
+
+
+Transformation Phases
+
+Envision
+- Build foundation of cloud plan.
+- Connect goals to cloud technology.
+- Decide what to measure and what to prioritize.
+
+
+Align
+- Turn plan into actual action plan.
+- Show the benefits to all people involved.
+- Decide the best approach and prepare to change.
+
+
+Launch
+- Actual start move to cloud.
+- Complete cloud project.
+- Start using cloud for real business value.
+
+
+Scale
+- Measure how successful the move was.
+- Improve and expand based on result.
+- Make sure the business keeps getting value.
