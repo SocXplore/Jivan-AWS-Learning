@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "first_name": "Jeanette",
+  "last_name": "Penddreth",
+  "email": "jpenddreth0@census.gov",
+  "gender": "Female",
+  "salary": 84340.5,
+  "active": true,
+  "address": {
+    "house_number": "1234, Elite Apartments, Oak Street",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": 90212
+  }
+}
