@@ -1,0 +1,9 @@
+employees:
+  - name: Jivan
+    contact:
+      email: jivan@gmail.com
+      phone: "9876543210"
+  - name: JK
+    contact:
+      email: jk@gmail.com
+      phone: "9876543211"

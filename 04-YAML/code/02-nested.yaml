@@ -1,0 +1,6 @@
+employee:
+  name: Jivan
+  age: 21
+  contact:
+    email: jivan@gmail.com
+    phone: "9876543210"

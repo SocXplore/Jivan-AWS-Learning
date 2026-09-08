@@ -1,0 +1,18 @@
+employee:
+  name: Jivan
+  age: 21
+  active: true
+
+  contact:
+    email: jivan@gmail.com
+    phone: "9876543210"
+
+  skills:
+    - AWS
+    - Python
+    - YAML
+
+  description: |
+    My name is Jivan.
+    I am learning AWS.
+    I am also learning YAML.

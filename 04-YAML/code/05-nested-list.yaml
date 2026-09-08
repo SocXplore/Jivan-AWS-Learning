@@ -1,0 +1,6 @@
+employee:
+  name: Jivan
+  skills:
+    - AWS
+    - Python
+    - YAML
