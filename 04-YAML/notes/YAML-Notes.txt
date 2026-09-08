@@ -1,0 +1,482 @@
+YAML - YAML Ain't Markup Language
+=================================
+
+1. WHAT IS YAML?
+
+YAML stands for "YAML Ain't Markup Language".
+
+YAML is a human-readable data serialization format. It is commonly used to store and exchange structured data.
+
+YAML is designed to be easy for humans to read and write.
+
+Common file extensions:
+- .yaml
+- .yml
+
+
+2. WHERE IS YAML USED?
+
+YAML is commonly used for configuration and structured data.
+
+Examples:
+- Cloud configuration
+- Docker configuration
+- Ansible playbooks
+- CI/CD configuration
+- Application configuration
+
+
+3. YAML VS JSON
+
+JSON commonly uses:
+- Curly braces { } for objects
+- Square brackets [ ] for arrays
+- Commas between values
+
+YAML mainly uses:
+- Indentation (spaces) to show hierarchy
+- A colon : for key-value pairs
+- A hyphen - for list items
+
+Example in JSON:
+
+{
+  "name": "Jivan",
+  "age": 21
+}
+
+The same data in YAML:
+
+name: Jivan
+age: 21
+
+
+4. KEY-VALUE PAIR
+
+YAML commonly stores data as key-value pairs.
+
+Syntax:
+
+key: value
+
+Example:
+
+name: Jivan
+age: 21
+
+Here:
+- name is the key.
+- Jivan is the value.
+- age is the key.
+- 21 is the value.
+
+The colon separates the key from its value.
+
+
+5. INDENTATION
+
+YAML uses spaces to show hierarchy.
+
+Example:
+
+employee:
+  name: Jivan
+  age: 21
+
+Here:
+- employee is the parent key.
+- name and age are inside employee.
+- The spaces before name and age show that they belong to employee.
+
+Important:
+Use spaces consistently for indentation. Do not use tabs for YAML indentation.
+
+
+6. LIST / ARRAY
+
+YAML uses a hyphen (-) to represent each item in a list.
+
+Example:
+
+skills:
+  - AWS
+  - Azure
+  - Python
+
+Here:
+- skills is the key.
+- AWS is the first item.
+- Azure is the second item.
+- Python is the third item.
+
+Think of it as:
+
+skills -> list
+          -> AWS
+          -> Azure
+          -> Python
+
+
+7. ARRAY OF OBJECTS
+
+A YAML list can contain multiple objects.
+
+Example:
+
+employees:
+  - name: Jivan
+    age: 21
+  - name: JK
+    age: 22
+
+Here:
+- employees is a list.
+- The first list item is an object containing name and age.
+- The second list item is another object containing name and age.
+
+In simple words:
+
+Array/List
+   |
+   |-- Object 1
+   |     |-- name
+   |     |-- age
+   |
+   |-- Object 2
+         |-- name
+         |-- age
+
+
+8. NESTED YAML
+
+Nested YAML means placing one object/key inside another object/key.
+
+Example:
+
+employee:
+  name: Jivan
+  contact:
+    email: jivan@gmail.com
+    phone: "9876543210"
+
+Here:
+- employee is the outer object.
+- contact is nested inside employee.
+- email and phone are nested inside contact.
+
+The indentation shows the relationship.
+
+Structure:
+
+employee
+  |
+  |-- name
+  |
+  |-- contact
+        |
+        |-- email
+        |-- phone
+
+
+9. MULTILINE TEXT
+
+The pipe symbol (|) is used when text should preserve line breaks.
+
+Example:
+
+description: |
+  My name is Jivan.
+  I am 21 years old.
+  I am learning AWS.
+
+This represents multiple lines of text.
+
+Remember:
+
+| = keep the text as multiple lines.
+
+
+10. FOLDED TEXT
+
+The greater-than symbol (>) is used to fold multiple lines into a single paragraph.
+
+Example:
+
+description: >
+  My name is Jivan.
+  I am 21 years old.
+  I am learning AWS.
+
+The lines are treated as one folded paragraph rather than separate lines.
+
+Remember:
+
+> = fold multiple lines into a paragraph.
+
+
+11. MULTILINE TEXT VS FOLDED TEXT
+
+Multiline text:
+
+description: |
+  My name is Jivan.
+  I am 21 years old.
+
+The line breaks are preserved.
+
+Folded text:
+
+description: >
+  My name is Jivan.
+  I am 21 years old.
+
+The lines are folded into one paragraph.
+
+
+12. NESTED OBJECT WITH LIST
+
+YAML can combine nesting and lists.
+
+Example:
+
+employee:
+  name: Jivan
+  skills:
+    - AWS
+    - Azure
+    - Python
+
+Here:
+- employee is an object.
+- skills is nested inside employee.
+- skills contains a list.
+
+
+13. LIST OF OBJECTS WITH NESTED DATA
+
+YAML can also contain a list of objects where each object has nested data.
+
+Example:
+
+employees:
+  - name: Jivan
+    contact:
+      email: jivan@gmail.com
+      phone: "9876543210"
+  - name: JK
+    contact:
+      email: jk@gmail.com
+      phone: "9876543211"
+
+Structure:
+
+employees
+  |
+  |-- Object 1
+  |     |-- name
+  |     |-- contact
+  |           |-- email
+  |           |-- phone
+  |
+  |-- Object 2
+        |-- name
+        |-- contact
+              |-- email
+              |-- phone
+
+
+14. COMMON YAML VALUE TYPES
+
+YAML can represent different kinds of values.
+
+String:
+
+name: Jivan
+
+Number:
+
+age: 21
+salary: 50000.50
+
+Boolean:
+
+active: true
+
+Another boolean:
+
+active: false
+
+Null:
+
+middle_name: null
+
+A string can also be explicitly written with quotes:
+
+name: "Jivan"
+
+
+15. COMMENTS
+
+A hash (#) is used to write a comment.
+
+Example:
+
+name: Jivan  # Employee name
+age: 21       # Employee age
+
+Comments are for humans and are not treated as data.
+
+
+16. QUOTATION MARKS
+
+Strings can be written without quotes in many simple cases.
+
+Example:
+
+name: Jivan
+
+Quotes can be useful when a value contains special characters or when you want to make it explicitly a string.
+
+Example:
+
+phone: "09876543210"
+message: "Hello, Jivan!"
+
+
+17. IMPORTANT YAML RULES
+
+1. Use a colon (:) between a key and its value.
+
+Example:
+name: Jivan
+
+2. Use spaces for indentation.
+
+Example:
+employee:
+  name: Jivan
+
+3. Do not use tabs for indentation.
+
+4. Use a hyphen (-) for each item in a list.
+
+Example:
+skills:
+  - AWS
+  - Python
+
+5. Keep indentation consistent.
+
+6. YAML is indentation-sensitive. Incorrect indentation can change the structure or make the YAML invalid.
+
+
+18. EASY WAY TO UNDERSTAND YAML
+
+Think of YAML as a tree.
+
+Example:
+
+employee:
+  name: Jivan
+  contact:
+    email: jivan@gmail.com
+    phone: "9876543210"
+  skills:
+    - AWS
+    - Python
+
+The structure is:
+
+employee
+|
+|-- name
+|
+|-- contact
+|     |-- email
+|     |-- phone
+|
+|-- skills
+      |-- AWS
+      |-- Python
+
+Indentation tells YAML which data belongs under which key.
+
+
+19. JSON TO YAML THINKING
+
+JSON:
+
+{
+  "name": "Jivan",
+  "age": 21,
+  "skills": ["AWS", "Python"]
+}
+
+YAML:
+
+name: Jivan
+age: 21
+skills:
+  - AWS
+  - Python
+
+The information is the same. The syntax is different.
+
+
+20. QUICK CHEAT SHEET
+
+YAML
+= YAML Ain't Markup Language
+
+key: value
+= key-value pair
+
+spaces
+= indentation / hierarchy
+
+-
+= list item
+
+|
+= multiline text with line breaks
+
+>
+= folded multiline text
+
+#
+= comment
+
+.yaml / .yml
+= YAML file extensions
+
+
+21. ONE COMPLETE EXAMPLE
+
+employee:
+  name: Jivan
+  age: 21
+  active: true
+
+  contact:
+    email: jivan@gmail.com
+    phone: "9876543210"
+
+  skills:
+    - AWS
+    - Python
+    - YAML
+
+  description: |
+    My name is Jivan.
+    I am learning AWS.
+    I am also learning YAML.
+
+This one example demonstrates:
+- Key-value pairs
+- Numbers
+- Boolean
+- Nested objects
+- Lists
+- Strings
+- Multiline text
+- Indentation
