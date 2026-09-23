@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+
+  MySubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: vpc-123456
+      CidrBlock: 10.0.1.0/24

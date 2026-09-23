@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Parameters:
+
+  InstanceType:
+    Type: String
+    Default: t2.micro
+
+  VpcCIDR:
+    Type: String
+    Default: 10.0.0.0/16
+
+  SubnetCIDR:
+    Type: String
+    Default: 10.0.1.0/24
+
+Resources:
+
+  # VPC
+  MyVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: !Ref VpcCIDR
+
+  # Subnet
+  MySubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref MyVPC
+      CidrBlock: !Ref SubnetCIDR
+
+  # Security Group
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: My Security Group
+      VpcId: !Ref MyVPC
+
+  # S3 Bucket
+  MyBucket:
+    Type: AWS::S3::Bucket
+
+  # EC2
+  MyEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      ImageId: ami-xxxxxxxxxxxxxxxxx
+      SubnetId: !Ref MySubnet
+      SecurityGroupIds:
+        - !Ref MySecurityGroup
